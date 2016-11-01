@@ -17,6 +17,20 @@ footer {
  * Off Canvas
  * --------------------------------------------------
  */
+.backgroundclear{
+color:rgba(255,255,255,0.8) !important;
+
+}
+
+.notused{
+  background: rgba(255, 255, 255, 0.4);
+background: -webkit-radial-gradient(center,rgba(255,255,255,0.4),rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-radial-gradient(center,rgba(255,255,255,0.4),rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-radial-gradient(center,rgba(255,255,255,0.4),rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: radial-gradient(center, rgba(255,255,255,0.4), rgba(0,0,0,0)); /*Standard*/
+}
+
+
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
@@ -25,6 +39,10 @@ footer {
             transition: all .25s ease-out;
   }
 
+  .row.top-buffer {
+    margin-top:200px !important;
+    margin-bottom:200px !important;
+  }
   .row-offcanvas-right {
     right: 0;
   }
